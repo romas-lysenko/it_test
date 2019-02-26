@@ -10,7 +10,8 @@
             img.width = 60 + 20*size;
         }
     </script>
-</head>
+
+</head>1111
 <body>
     <table border="1" width="40%">
         <tr>
@@ -31,57 +32,59 @@
         </tr>
     </table>
 <br>
-    <table>
+    <form action="handler.php">
+    <fieldset>
+        <legend>Название формы</legend>
+    <table width="100%">
             <tr>
-                <form action="handler.php">
-                    <td><select name="select">
-                        <option selected value="s1">Вариант_1</option>
-                        <option value="s2">Вариант_2</option>
-                        <option value="s3">Вариант_3</option>
-                        <option value="s4">Вариант_4</option>
-                        <option value="s5">Вариант_5</option>
-                    </select></td>
+
+                        <td><select name="select">
+                            <option selected value="s1">Вариант_1</option>
+                            <option value="s2">Вариант_2</option>
+                            <option value="s3">Вариант_3</option>
+                            <option value="s4">Вариант_4</option>
+                            <option value="s5">Вариант_5</option>
+                        </select></td>
 
                     <td><input type="search" placeholder="поиск"></td>
                         <td><input type="number" name="num" size="3"  min="1" max="5" value="3"></td>
                     <td colspan="2"> <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="1"><br>
                          </td>
-                </form>
+
             </tr>
 
             <tr>
-                <form action="handler.php">
-                    <td><select name="select" size="5" multiple>
-                        <option selected value="s1">Вариант_1</option>
-                        <option value="s2">Вариант_2</option>
-                        <option value="s3">Вариант_3</option>
-                        <option value="s4">Вариант_4</option>
-                        <option value="s5">Вариант_5</option>
-                     </select></td>
-                    <td>Многострочный текст<Br>
-                        <textarea name="comment" cols="20" rows="10"></textarea></td>
-                    <td> Пример<br>
-                         <input type="radio" name="radio button" value="r_1"> radio button 1<Br>
-                        <input type="radio" name="radio button" value="r_2"> radio button 2<Br>
-                        <input type="radio" name="radio button" value="r_3"> radio button 3<Br> </td>
-                    <td><img src="img/maxresdefault.jpg" alt="" id="pic"></td>
 
-                </form>
+                        <td><select name="select" size="5" multiple>
+                            <option selected value="s1">Вариант_1</option>
+                            <option value="s2">Вариант_2</option>
+                            <option value="s3">Вариант_3</option>
+                            <option value="s4">Вариант_4</option>
+                            <option value="s5">Вариант_5</option>
+                         </select></td>
+                        <td>Многострочный текст<Br>
+                            <textarea name="comment" cols="20" rows="10"></textarea></td>
+                        <td> Пример<br>
+                             <input type="radio" name="radio button" value="r_1"> radio button 1<Br>
+                            <input type="radio" name="radio button" value="r_2"> radio button 2<Br>
+                            <input type="radio" name="radio button" value="r_3"> radio button 3<Br> </td>
+                        <td><img src="img/maxresdefault.jpg" alt="" id="pic"></td>
+
             </tr>
 
             <tr>
-                <form action="handler.php">
-                    <td> цвет <input type="color" value="fff">
-                        <input type="submit" value="Выбрать"> </td>
+                       <td> цвет <input type="color" value="fff">
+                          <input type="submit" value="Выбрать"> </td>
 
-                    <td><input type="file"></td>
-                    <td><input type="submit" value="Отправить"></td>
-                    <td><input type="reset" value="Очистить"></td>
+                        <td><input type="file"></td>
+                        <td><input type="submit" value="Отправить"></td>
+                        <td><input type="reset" value="Очистить"></td>
 
-                </form>
 
             </tr>
 
     </table>
+    </fieldset>
+    </form>
 </body>
 </html>
