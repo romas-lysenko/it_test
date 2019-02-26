@@ -30,48 +30,58 @@
             <td align="center" valign="top">270 см</td>
         </tr>
     </table>
+<br>
+    <table>
+            <tr>
+                <form action="handler.php">
+                    <td><select name="select">
+                        <option selected value="s1">Вариант_1</option>
+                        <option value="s2">Вариант_2</option>
+                        <option value="s3">Вариант_3</option>
+                        <option value="s4">Вариант_4</option>
+                        <option value="s5">Вариант_5</option>
+                    </select></td>
 
-    <form action="handler.php">
-        <p> Пример </p>
-            <input type="radio" name="radio button" value="r_1"> radio button 1<Br>
-            <input type="radio" name="radio button" value="r_2"> radio button 2<Br>
-            <input type="radio" name="radio button" value="r_3"> radio button 3<Br>
+                    <td><input type="search" placeholder="поиск"></td>
+                        <td><input type="number" name="num" size="3"  min="1" max="5" value="3"></td>
+                    <td colspan="2"> <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="1"><br>
+                         </td>
+                </form>
+            </tr>
 
-        <p>Многострочный текст<Br>
-            <textarea name="comment" cols="40" rows="10"></textarea></p>
+            <tr>
+                <form action="handler.php">
+                    <td><select name="select" size="5" multiple>
+                        <option selected value="s1">Вариант_1</option>
+                        <option value="s2">Вариант_2</option>
+                        <option value="s3">Вариант_3</option>
+                        <option value="s4">Вариант_4</option>
+                        <option value="s5">Вариант_5</option>
+                     </select></td>
+                    <td>Многострочный текст<Br>
+                        <textarea name="comment" cols="20" rows="10"></textarea></td>
+                    <td> Пример<br>
+                         <input type="radio" name="radio button" value="r_1"> radio button 1<Br>
+                        <input type="radio" name="radio button" value="r_2"> radio button 2<Br>
+                        <input type="radio" name="radio button" value="r_3"> radio button 3<Br> </td>
+                    <td><img src="img/maxresdefault.jpg" alt="" id="pic"></td>
 
-        <p> цвет <input type="color" value="fff"> </p>
-        <p><input type="submit" value="Выбрать">
-            <input type="reset" value="Очистить"></p>
+                </form>
+            </tr>
 
+            <tr>
+                <form action="handler.php">
+                    <td> цвет <input type="color" value="fff">
+                        <input type="submit" value="Выбрать"> </td>
 
-        <p> размер рисунка: <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"></p>
-        <p> <img src="img/maxresdefault.jpg" alt="" id="pic"></p>
+                    <td><input type="file"></td>
+                    <td><input type="submit" value="Отправить"></td>
+                    <td><input type="reset" value="Очистить"></td>
 
+                </form>
 
-        <br><input type="search" placeholder="поиск">
-            <input type="number" name="num" size="3"  min="1" max="5" value="3">
+            </tr>
 
-        <p><input type="file">
-               <input type="submit" value="Отправить">
-               <input type="submit" value="Очистить"></p>
-
-         <br><select name="select" size="5" multiple>
-                <option selected value="s1">Вариант_1</option>
-                <option value="s2">Вариант_2</option>
-                <option value="s3">Вариант_3</option>
-                <option value="s4">Вариант_4</option>
-                <option value="s5">Вариант_5</option>
-             </select>
-
-        <p><select name="select">
-             <option selected value="s1">Вариант_1</option>
-             <option value="s2">Вариант_2</option>
-             <option value="s3">Вариант_3</option>
-             <option value="s4">Вариант_4</option>
-             <option value="s5">Вариант_5</option>
-        </select></p>
-
-    </form>
+    </table>
 </body>
 </html>
