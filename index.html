@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Dinosaur</title>
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20*size;
+        }
+    </script>
 </head>
 <body>
     <table border="1" width="40%">
@@ -23,5 +30,48 @@
             <td align="center" valign="top">270 см</td>
         </tr>
     </table>
+
+    <form action="handler.php">
+        <p> Пример </p>
+            <input type="radio" name="radio button" value="r_1"> radio button 1<Br>
+            <input type="radio" name="radio button" value="r_2"> radio button 2<Br>
+            <input type="radio" name="radio button" value="r_3"> radio button 3<Br>
+
+        <p>Многострочный текст<Br>
+            <textarea name="comment" cols="40" rows="10"></textarea></p>
+
+        <p> цвет <input type="color" value="fff"> </p>
+        <p><input type="submit" value="Выбрать">
+            <input type="reset" value="Очистить"></p>
+
+
+        <p> размер рисунка: <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"></p>
+        <p> <img src="img/maxresdefault.jpg" alt="" id="pic"></p>
+
+
+        <br><input type="search" placeholder="поиск">
+            <input type="number" name="num" size="3"  min="1" max="5" value="3">
+
+        <p><input type="file">
+               <input type="submit" value="Отправить">
+               <input type="submit" value="Очистить"></p>
+
+         <br><select name="select" size="5" multiple>
+                <option selected value="s1">Вариант_1</option>
+                <option value="s2">Вариант_2</option>
+                <option value="s3">Вариант_3</option>
+                <option value="s4">Вариант_4</option>
+                <option value="s5">Вариант_5</option>
+             </select>
+
+        <p><select name="select">
+             <option selected value="s1">Вариант_1</option>
+             <option value="s2">Вариант_2</option>
+             <option value="s3">Вариант_3</option>
+             <option value="s4">Вариант_4</option>
+             <option value="s5">Вариант_5</option>
+        </select></p>
+
+    </form>
 </body>
 </html>
