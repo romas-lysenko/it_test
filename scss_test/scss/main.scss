@@ -68,13 +68,15 @@ text-align: center;
 
 $color: gold;
 
-div b {
+div b  {
 
   color: $color;
 }
 
+
 figcaption {
   color: $color;
+
 }
 
 $bgd_color: #4db6ac;
@@ -82,4 +84,5 @@ $bgd_color: #4db6ac;
 body {
 
   background-color: $bgd_color;
+  color: blue;
 }
