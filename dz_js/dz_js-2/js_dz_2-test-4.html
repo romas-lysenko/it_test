@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_dz2_test-4</title>
+    <script>
+
+
+
+        nextPrime:
+            for (var i = 2; i <= 10; i++) {
+
+                for (var j = 2; j < i; j++) {
+                    if (i % j == 0) continue nextPrime;
+                }
+
+                alert( i ); // простое
+            }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
