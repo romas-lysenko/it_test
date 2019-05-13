@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+
+    <!-- Последняя компиляция и сжатый CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Дополнение к теме -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Последняя компиляция и сжатый JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/main.css">
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(src/fonts/Montserrat/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+        }
+         p {
+            font-family: 'Montserrat', sans-serif;
+            /*font-family: 'Roboto', sans-serif;*/
+        }
+        </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid" style="background-color: aqua">
+        <div class="navbar-header">
+            <a href="#"><img src="src/img/logo.png" alt="ЕДЦ"></a>
+            <a href="#" class="navbar-brand>"></a></div>
+
+        <div class="right">
+            <div class="phone">
+                <a href="#"><img src="src/img/baseline-local_phone-24px.svg"></a>
+                <span class="phone__tel">80300 5000</span>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li> <a href="#">Главная</a></li>
+                <li> <a href="#">Услуги</a></li>
+                <li> <a href="#">Клиники и кабинеты</a></li>
+                <li> <a href="#">О нас</a></li>
+                <li> <a href="#">Статьи</a></li>
+                <li> <a href="#">FAQ</a></li>
+                <li> <a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="main">
+    <div class="main__container container">
+
+            <div class="main__autoRedial1">
+
+            <p>Всю необходимую информацию о том, как и в каком центре<br>
+            сделать МРТ, КТ и рентген исследованиях, сравнить интересующие<br>
+            Вас клиники, цены на диагностику и порядок прохождения<br>
+            процедур, а также записать на исследование можно по<br>
+            телефону 8 (812) 385-77-56</p></div>
+
+        <div class="main__autoRedial2">Оставьте свой номер, а мы<br>
+            вам перезвоним</div>
+       <div class="main__autoRedial3">
+           <form action="/examples/php-scripts/telephone.php" method="post">
+             <input type="tel" name="phone_number" placeholder="+380" pattern="\+3\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                <span>
+                    <input class="form" type="submit">
+               </span>
+        </form>
+       </div>
+    </div>
+</div>
+<div class="blok__container container">
+    <div class="blok_1">
+    <div class="blok__1">
+        <div class="blok__1_1">
+            <img src="src/img/block-1.png" alt="">
+        </div>
+        <div class="blok__1_2">Best Treatment</div>
+        <div class="blok__1_3">Sed ut perspiciatius unde omnis iste natus<br>
+            error sit voluptaten accusantium dolorem-<br>
+            que laudantium.</div>
+    </div>
+    </div>
+
+    <div class="blok_2">
+        <div class="blok__2">
+            <div class="blok__2_1">
+                <img src="src/img/block-2.png" alt="">
+            </div>
+            <div class="blok__2_2">Best Treatment</div>
+            <div class="blok__2_3">Sed ut perspiciatius unde omnis iste natus<br>
+                error sit voluptaten accusantium dolorem-<br>
+                que laudantium.</div>
+        </div>
+    </div>
+
+    <div class="blok_3">
+        <div class="blok__3">
+            <div class="blok__3_1">
+                <img src="src/img/block-3.png" alt="">
+            </div>
+            <div class="blok__3_2">Best Treatment</div>
+            <div class="blok__3_3">Sed ut perspiciatius unde omnis iste natus<br>
+                error sit voluptaten accusantium dolorem-<br>
+                que laudantium.</div>
+        </div>
+    </div>
+    <div class="blok_4">
+        <div class="blok__4">
+            <div class="blok__4_1">
+                <img src="src/img/block-4.png" alt="">
+            </div>
+            <div class="blok__4_2">Best Treatment</div>
+            <div class="blok__4_3">Sed ut perspiciatius unde omnis iste natus<br>
+                error sit voluptaten accusantium dolorem-<br>
+                que laudantium.</div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="bloks_container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+
+            <div class="page-header">
+                <h3>Bootstrap</h3>
+                <p>Responsive Moving Box Carousel Demo</p>
+            </div>
+
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>&lt;!&ndash; /Slide1 &ndash;&gt;
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>&lt;!&ndash; /Slide2 &ndash;&gt;
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                </div>
+                                <div class="caption">
+                                    <h4>Praesent commodo</h4>
+                                    <p>Nullam Condimentum Nibh Etiam Sem</p>
+                                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>&lt;!&ndash; /Slide3 &ndash;&gt;
+                </div>
+
+                <div class="control-box">
+                    <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+                    <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+                </div>&lt;!&ndash; /.control-box &ndash;&gt;
+
+            </div>&lt;!&ndash; /#myCarousel &ndash;&gt;
+
+        </div>&lt;!&ndash; /.span12 &ndash;&gt;
+    </div>&lt;!&ndash; /.row &ndash;&gt;
+</div>&lt;!&ndash; /.container &ndash;&gt;
+
+
+&lt;!&ndash; Delete This &ndash;&gt;
+<div class="footer">
+    <a href="http://simonalex.com/">&hearts; Redfrost</a> | <a href="https://twitter.github.com/bootstrap/">Get Bootstrap</a> | <a href="http://placehold.it/">Get Placeholder</a>
+    <p class="right">&lsaquo; Resize Window &rsaquo;</p>
+    <p>&nbsp;</p>
+    <p><strong>*VISIT THIS LINK FOR IE9 FIX: <a href="https://codepen.io/redfrost/pen/yKAmc"  target="_blank">https://codepen.io/redfrost/pen/yKAmc</a>
+
+        <strong></p>
+</div>
+
+<script src="./src/js/main.js"></script>-->
+
+</body>
+</html>
